@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mantis-tests", "mantis-tests\mantis-tests.csproj", "{1A1E04F2-DA81-46FB-98D7-D2DB759A5DF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A1E04F2-DA81-46FB-98D7-D2DB759A5DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A1E04F2-DA81-46FB-98D7-D2DB759A5DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A1E04F2-DA81-46FB-98D7-D2DB759A5DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A1E04F2-DA81-46FB-98D7-D2DB759A5DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABB18B0B-C126-428D-9B8E-CBDFF80545EA}
+	EndGlobalSection
+EndGlobal
