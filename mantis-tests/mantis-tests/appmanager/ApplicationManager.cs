@@ -7,6 +7,7 @@ using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using System.Deployment.Internal;
 
 namespace mantis_tests
 {
@@ -27,19 +28,22 @@ namespace mantis_tests
 
         public NavigationHelper NavigateTo { get; private set; }
 
+        public APIHelper API { get; set; }
+
         private static ThreadLocal<ApplicationManager> app = new ThreadLocal<ApplicationManager>();
 
         public ApplicationManager()
         {
             driver = new FirefoxDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
-            baseURL = "http://localhost";
+            baseURL = "https://localhost";
             Registration = new RegistrationHelper(this);
             Ftp = new FtpHelper(this);
             Projects = new ProjectManagementHelper(this);
             Auth = new LoginHelper(this);
             Menu = new ManagementMenuHelper(this);
             NavigateTo = new NavigationHelper(this, baseURL);
+            API = new APIHelper(this);
         }
 
         ~ApplicationManager()

@@ -10,11 +10,10 @@ namespace mantis_tests
     {
         public string Name { get; set; }
         public string Description { get; set; }
+        public string Id { get; set; }
 
-        public ProjectData(string name, string description)
+        public ProjectData()
         {
-            Name = name;
-            Description = description;
         }
 
         public bool Equals(ProjectData other)

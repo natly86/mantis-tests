@@ -7,8 +7,10 @@ using NUnit.Framework;
 
 namespace mantis_tests
 {
+
     public class TestBase
     {
+       
         protected ApplicationManager app;
 
         [SetUp]
